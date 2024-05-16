@@ -1,0 +1,83 @@
+body{
+    background:ghostwhite;
+    color: dimgray;
+    font-family: serif;
+    text-align: center;
+}
+h1{
+font-size: 2rem;
+}
+#container{
+    margin: 5% auto;
+    border-radius: 5px;
+    text-align: center;
+}
+.box{
+    display: inline-block;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    position: absolute;
+    font-size: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+}
+.top{
+    border-top: none;
+}
+.bottom{
+    border-top: none;
+}
+.left{
+    border-top: none;
+}
+.right{
+    border-top: none;
+}
+.activeBox{
+    background: silver;
+}
+
+.alert{
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    background: ghostwhite;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    top:0 ;
+    bottom: 50px;
+    padding: 30px;
+    box-shadow: 0 0 75px 2px dimgray;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+}
+@keyframes larger{
+    from{
+        height:75px;
+        width: 125px;
+    }
+    to{
+        height: 100px;
+        width: 250px;
+    }
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
